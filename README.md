@@ -1,65 +1,67 @@
-# Th3-Coin - Decentralized Cryptocurrency
+# 🪙 Th3-Coin - Decentralized Cryptocurrency
 
-**Prototype Currency by Th3-C0der**
+**A decentralized cryptocurrency prototype built with TypeScript**
 
-A TypeScript implementation of a decentralized cryptocurrency similar to Bitcoin, featuring blockchain technology, proof-of-work mining, wallet functionality, and peer-to-peer networking. This project serves as an educational prototype to demonstrate the fundamental concepts behind cryptocurrency systems.
+Th3-Coin is a TypeScript implementation of a decentralized cryptocurrency inspired by Bitcoin. It demonstrates the core concepts behind blockchain technology, including proof-of-work mining, the UTXO transaction model, wallet management, and peer-to-peer networking.
 
-## Project Structure
+> **⚠️ Note:** This project is intended for educational and research purposes. It is **not** designed for production or real-world financial use.
 
-```
+---
+
+## 📁 Project Structure
+
+```text
 src/
 ├── interfaces/          # Core TypeScript interfaces and types
-│   └── index.ts        # All interface definitions
-├── core/               # Core blockchain components
-│   ├── blockchain.ts   # Main blockchain implementation
-│   ├── block.ts        # Block and BlockHeader classes
-│   ├── transaction.ts  # Transaction-related classes
-│   ├── mining.ts       # Mining and proof-of-work
-│   └── mempool.ts      # Transaction pool management
-├── wallet/             # Wallet management
-│   ├── wallet.ts       # Main wallet implementation
-│   └── keypair.ts      # Cryptographic key pair handling
-├── network/            # P2P networking
-│   ├── p2p.ts          # Peer-to-peer network manager
-│   └── protocol.ts     # Network protocol handler
-├── storage/            # Data persistence
-│   └── storage.ts      # Blockchain and wallet storage
-└── index.ts            # Main entry point
+│   └── index.ts         # Shared interfaces
+├── core/                # Blockchain implementation
+│   ├── blockchain.ts
+│   ├── block.ts
+│   ├── transaction.ts
+│   ├── mining.ts
+│   └── mempool.ts
+├── wallet/              # Wallet and key management
+│   ├── wallet.ts
+│   └── keypair.ts
+├── network/             # Peer-to-peer networking
+│   ├── p2p.ts
+│   └── protocol.ts
+├── storage/             # Persistent storage
+│   └── storage.ts
+└── index.ts
 ```
 
-## Features
+## ✨ Features
 
-- ✅ **Project Structure**: TypeScript project with proper configuration
-- ✅ **Core Interfaces**: Complete interface definitions for all components
-- ✅ **Cryptographic Utilities**: SHA-256 hashing and ECDSA signatures
-- ✅ **Transaction System**: UTXO model with transaction validation
-- ✅ **Blockchain Core**: Block validation and chain management
-- ✅ **Proof-of-Work Mining**: Mining algorithm with difficulty adjustment
-- ✅ **Wallet Functionality**: Key management and transaction creation
-- ✅ **P2P Networking**: Peer discovery and data propagation
-- ✅ **Data Persistence**: Blockchain and wallet storage
-- ✅ **Command-Line Interface**: User-friendly CLI for all operations
-- ✅ **System Integration**: Full node with configuration and monitoring
-- ✅ **Graceful Shutdown**: Proper cleanup and signal handling
-- ✅ **Performance Optimizations**: UTXO caching, parallel validation, and monitoring
-- ✅ **Comprehensive Benchmarks**: Performance testing and optimization metrics
+* Blockchain implementation
+* Proof-of-Work (PoW) mining
+* UTXO-based transaction system
+* SHA-256 hashing & ECDSA digital signatures
+* Wallet generation and transaction signing
+* Peer-to-peer networking
+* Mempool management
+* Persistent blockchain and wallet storage
+* Command-line interface (CLI)
+* Configurable node and mining settings
+* Performance optimizations
+* Comprehensive testing suite
 
-## Key Concepts
+## 🔍 Key Concepts
 
 Th3-Coin implements several core cryptocurrency concepts:
 
-- **Blockchain**: A distributed ledger that records all transactions across the network
-- **Proof-of-Work**: Mining mechanism that secures the network through computational puzzles
-- **UTXO Model**: Unspent Transaction Output model for tracking coin ownership
-- **Digital Signatures**: ECDSA cryptography for transaction authentication
-- **P2P Network**: Decentralized peer-to-peer communication protocol
+* **Blockchain** – A distributed ledger that records every transaction.
+* **Proof-of-Work** – A consensus mechanism that secures the network through computational work.
+* **UTXO Model** – Tracks ownership using unspent transaction outputs.
+* **Digital Signatures** – Uses ECDSA to verify transaction authenticity.
+* **Peer-to-Peer Network** – Enables decentralized communication between nodes.
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18 or higher
-- npm or yarn
+* Node.js 18 or later
+* npm (or Yarn)
 
 ### Installation
 
@@ -72,28 +74,29 @@ npm install
 #### Running a Full Node
 
 ```bash
-# Start a Th3Coin node with default configuration
+# Start a node using the default configuration
 npm run start:node
 
-# Or create a custom configuration file
+# Or create a custom configuration
 cp th3coin.config.example.json th3coin.config.json
-# Edit th3coin.config.json as needed
+
+# Edit the configuration if needed
 npm run start:node
 ```
 
 #### Using the CLI
 
 ```bash
-# Start the CLI for wallet and blockchain operations
+# Start the command-line interface
 npm run cli
 
-# Or after building
+# After building
 ./dist/cli/th3coin.js --help
 ```
 
 ### Configuration
 
-Create a `th3coin.config.json` file to customize your node:
+Create a `th3coin.config.json` file to customize your node.
 
 ```json
 {
@@ -116,9 +119,9 @@ Create a `th3coin.config.json` file to customize your node:
 }
 ```
 
-See [System Startup Documentation](docs/system-startup.md) for detailed configuration options and [Performance Optimizations](docs/performance-optimizations.md) for performance tuning.
+For advanced configuration and optimization, see the documentation in the `docs/` directory.
 
-### Development
+## 🛠️ Development
 
 ```bash
 # Build the project
@@ -136,85 +139,74 @@ npm run test:watch
 # Run system integration tests
 npm run test:system
 
-# Clean build directory
+# Run performance benchmarks
+npm run test:performance
+
+# Clean build files
 npm run clean
 ```
 
-### Testing
+## 🧪 Testing
 
-The project uses Vitest for testing with 40+ test files covering unit, integration, and system tests.
+The project uses **Vitest** for unit, integration, and system testing.
 
-```bash
-npm test
-```
+Reusable test fixtures and scenarios are available in the `test-data/` directory:
 
-# Run tests in watch mode
-npm run test:watch
+* `test-fixtures.ts`
+* `test-scenarios.ts`
+* `test-config.json`
 
-# Run system integration tests
-npm run test:system
-
-# Run performance benchmarks
-npm run test:performance
-```
-
-#### Test Utilities
-
-The project includes reusable test fixtures and scenarios in the `test-data` directory:
-
-- **test-fixtures.ts**: Helper functions for generating test wallets, blocks, transactions, and configurations
-- **test-scenarios.ts**: Pre-defined test scenarios for common use cases
-- **test-config.json**: Base configuration for testing
-
-See [Testing Documentation](docs/testing.md) for detailed testing guide and [test-data README](test-data/README.md) for fixture usage.
-
-## How It Works
+## ⚙️ How It Works
 
 ### Transaction Flow
 
-1. **Create Transaction**: Users create transactions using their wallet, specifying recipients and amounts
-2. **Sign Transaction**: Transaction is signed with the sender's private key
-3. **Broadcast**: Transaction is broadcast to the P2P network
-4. **Mempool**: Valid transactions are stored in the mempool pending inclusion in a block
-5. **Mining**: Miners select transactions from the mempool and attempt to solve the proof-of-work puzzle
-6. **Block Creation**: When a miner finds a valid hash, they create a new block containing the transactions
-7. **Block Propagation**: The new block is broadcast to the network
-8. **Validation**: Other nodes validate the block and add it to their blockchain
-9. **Confirmation**: Transactions receive confirmations as more blocks are added on top
+1. Create a transaction.
+2. Sign it using the sender's private key.
+3. Broadcast it to the network.
+4. Validate and store it in the mempool.
+5. Mine it into a block.
+6. Broadcast the newly mined block.
+7. Validate and append the block to the blockchain.
+8. Transactions gain confirmations as additional blocks are mined.
 
 ### Security Features
 
-- **Cryptographic Security**: SHA-256 hashing and ECDSA signatures ensure transaction integrity
-- **Decentralized Consensus**: Proof-of-work mechanism prevents double-spending attacks
-- **Immutable Ledger**: Once blocks are added to the blockchain, they cannot be altered
-- **Network Resilience**: P2P architecture ensures no single point of failure
+* SHA-256 hashing
+* ECDSA digital signatures
+* Proof-of-Work consensus
+* Immutable blockchain
+* Decentralized peer-to-peer architecture
 
-## Architecture
+## 🏗️ Architecture
 
-Th3-Coin follows a modular architecture with clear separation of concerns:
+Th3-Coin follows a modular architecture with clear separation of responsibilities:
 
-- **Interfaces**: Define contracts for all components
-- **Core**: Blockchain logic, transactions, and mining
-- **Wallet**: Key management and transaction creation
-- **Network**: P2P communication and synchronization
-- **Storage**: Data persistence and retrieval
+* **Interfaces** – Shared contracts and types
+* **Core** – Blockchain, blocks, transactions, and mining
+* **Wallet** – Key management and transaction creation
+* **Network** – P2P communication and synchronization
+* **Storage** – Persistent blockchain and wallet data
 
-## Future Enhancements
+## 📌 Future Enhancements
 
-Potential improvements for future versions:
+Planned improvements include:
 
-- **Smart Contracts**: Add support for programmable transactions
-- **Proof-of-Stake**: Implement alternative consensus mechanism
-- **Light Clients**: Enable lightweight SPV clients
-- **Privacy Features**: Add transaction mixing or zero-knowledge proofs
-- **Cross-Chain Compatibility**: Enable interoperability with other blockchains
-- **Mobile Wallet**: Develop mobile application for wallet management
-- **Hardware Wallet Integration**: Support for hardware wallet devices
+* Smart Contracts
+* Proof-of-Stake consensus
+* Light (SPV) clients
+* Privacy enhancements
+* Cross-chain interoperability
+* Mobile wallet
+* Hardware wallet integration
 
-## License
+## 📄 License
 
-MIT License - see LICENSE file for details.
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ---
 
+<div align="center">
+
 **By Th3-C0der**
+
+</div>
