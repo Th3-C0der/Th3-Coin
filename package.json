@@ -1,0 +1,42 @@
+{
+  "name": "th3coin",
+  "version": "1.0.0",
+  "description": "A decentralized cryptocurrency implementation similar to Bitcoin",
+  "main": "dist/index.js",
+  "bin": {
+    "th3coin": "dist/cli/th3coin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:node": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts",
+    "cli": "ts-node src/cli/th3coin.ts",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:system": "vitest --run src/__tests__/system-integration.test.ts",
+    "test:performance": "vitest --run src/__tests__/performance-benchmarks.test.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "blockchain",
+    "bitcoin",
+    "typescript"
+  ],
+  "author": "Th3Coin Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/commander": "^2.12.0",
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "@types/elliptic": "^6.4.14",
+    "commander": "^14.0.0",
+    "elliptic": "^6.5.4"
+  }
+}

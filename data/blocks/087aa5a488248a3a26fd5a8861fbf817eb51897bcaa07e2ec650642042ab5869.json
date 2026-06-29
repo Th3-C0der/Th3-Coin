@@ -1,0 +1,42 @@
+{
+  "header": {
+    "version": 1,
+    "previousHash": "09f59b38548104bc25cea20b301403772e10f527cd9d9108047f996a116eff31",
+    "merkleRoot": "7fe92434bcb038e9af320cdc7d2d2e2d75074a5b15d0f6524982e75c36434744",
+    "timestamp": 1755492192977,
+    "difficulty": 1,
+    "nonce": 14
+  },
+  "transactions": [
+    {
+      "inputs": [
+        {
+          "txId": "0000000000000000000000000000000000000000000000000000000000000000",
+          "outputIndex": -1,
+          "signature": "",
+          "publicKey": ""
+        }
+      ],
+      "outputs": [
+        {
+          "address": "1fuxeY46k4h5uT4FRhew8vvGvP4iTv9qG",
+          "amount": 2500000000
+        }
+      ],
+      "timestamp": 1755492192977,
+      "id": "7fe92434bcb038e9af320cdc7d2d2e2d75074a5b15d0f6524982e75c36434744"
+    }
+  ],
+  "_merkleTree": {
+    "root": {
+      "hash": "7fe92434bcb038e9af320cdc7d2d2e2d75074a5b15d0f6524982e75c36434744",
+      "data": "7fe92434bcb038e9af320cdc7d2d2e2d75074a5b15d0f6524982e75c36434744",
+      "left": null,
+      "right": null
+    },
+    "transactionCount": 1,
+    "merkleRoot": "7fe92434bcb038e9af320cdc7d2d2e2d75074a5b15d0f6524982e75c36434744",
+    "depth": 1
+  },
+  "_hash": "09823f8f6e7316bbbde6f92c218a55ff94cc8e97f4efdc7f10c7ea58eaffb18c"
+}

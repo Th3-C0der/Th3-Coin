@@ -1,0 +1,26 @@
+{
+  "network": {
+    "port": 8333,
+    "maxPeers": 10,
+    "seedNodes": [
+      "localhost:8334",
+      "localhost:8335"
+    ],
+    "connectionTimeout": 30000
+  },
+  "mining": {
+    "enabled": true,
+    "difficulty": 4,
+    "blockReward": 5000000000,
+    "targetBlockTime": 600000
+  },
+  "storage": {
+    "dataDirectory": "./data",
+    "walletDirectory": "./data/wallets",
+    "blockchainFile": "./data/blockchain.json"
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/th3coin.log"
+  }
+}

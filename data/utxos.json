@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "count": 18,
+  "lastUpdated": 1755492193921,
+  "utxos": [
+    {
+      "txId": "c9a792be02bacf5e6faf2f7c61d1a761d45cd217b8bad1f4b0043dcf32973d96",
+      "outputIndex": 0,
+      "address": "13gbeBxfQJ6HZBY2wuBgzX2fjCnKkqM6G4",
+      "amount": 5000000000,
+      "isSpent": false
+    },
+    {
+      "txId": "7098fd20a8c64a7c2b337fe1250985892469ccedfb4cfa0211f51aa0f546cff6",
+      "outputIndex": 0,
+      "address": "1JxMFG2e1A4Xi2ijgwUEr7CgcHXW1CsAHD",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "798272ad6604853df20805c9687d069473dc22be2499e2dd46d5416e157605d3",
+      "outputIndex": 0,
+      "address": "18DFR5oD8Dd6ukX1pJgbDnLfYm5Y37o11p",
+      "amount": 2500000000,
+      "isSpent": true
+    },
+    {
+      "txId": "a9cc93ed20f78fdff7b1e40f7b8982a7041e084bc8919163e84c82e0956a6648",
+      "outputIndex": 0,
+      "address": "19hCN6RcpDwNvUEc2bPvYSkn4uTRqH1qsZ",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "201fa8c08a43859dfb82df5fa43eddd28a0e65167d41f97b55c869597f45fe47",
+      "outputIndex": 0,
+      "address": "1Ayce6phddbviPvVFVdCbrAhCfPDic8X4e",
+      "amount": 1,
+      "isSpent": false
+    },
+    {
+      "txId": "201fa8c08a43859dfb82df5fa43eddd28a0e65167d41f97b55c869597f45fe47",
+      "outputIndex": 1,
+      "address": "18DFR5oD8Dd6ukX1pJgbDnLfYm5Y37o11p",
+      "amount": 2498999999,
+      "isSpent": false
+    },
+    {
+      "txId": "670bdaa1604af8bc59075dba6804bc8de1717d8ea09355175f6d4f252f9307c5",
+      "outputIndex": 0,
+      "address": "1LjELa1S4Ac75CRwctsgTgKZ9zM5xk18vm",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "99a3f9988bc6f03feeed095cfdad1c58959ce19752ef0ed5b0d5c3b20e554d52",
+      "outputIndex": 0,
+      "address": "1L3ad53cFNB686CYwMTzh3JeBJ2FNbLpNg",
+      "amount": 2500000000,
+      "isSpent": true
+    },
+    {
+      "txId": "d158e9cf1672be8211dd2d0346c3f299ca4c351f97b86e7f5e6c928a668b2e43",
+      "outputIndex": 0,
+      "address": "1D8fo91JAQxyXoQDrUjJVpkCPxqDn7zeBB",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "853651cfc9853633bc9548bfa1fde94bb12bec898df967d8356a06b942c1fbf8",
+      "outputIndex": 0,
+      "address": "1L3ad53cFNB686CYwMTzh3JeBJ2FNbLpNg",
+      "amount": 1000000000,
+      "isSpent": false
+    },
+    {
+      "txId": "853651cfc9853633bc9548bfa1fde94bb12bec898df967d8356a06b942c1fbf8",
+      "outputIndex": 1,
+      "address": "1L3ad53cFNB686CYwMTzh3JeBJ2FNbLpNg",
+      "amount": 1490000000,
+      "isSpent": false
+    },
+    {
+      "txId": "d2a6a5fccfb0ed30383ec3fd093613735d54c5e8136e7d3e979f5d9a1c82a460",
+      "outputIndex": 0,
+      "address": "1GNvG3atokuCTeg3ktqDM7aXcdH7j8V9Kn",
+      "amount": 2500000000,
+      "isSpent": true
+    },
+    {
+      "txId": "38cdf5bfe16cb248545185c2e8b78c2111fc9bad8a521cc0b5fb033e02e98e48",
+      "outputIndex": 0,
+      "address": "14YzDH9coSP8VicGEEMFvfirSTM1rqztia",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "182faabf99f2ba600a0386603eddb89389013be6ffd38cec38de0fde6065f9db",
+      "outputIndex": 0,
+      "address": "1CttKFYP5uTWWavuQmsAiiSkHb3fR6AgD3",
+      "amount": 1000000000,
+      "isSpent": false
+    },
+    {
+      "txId": "182faabf99f2ba600a0386603eddb89389013be6ffd38cec38de0fde6065f9db",
+      "outputIndex": 1,
+      "address": "1GNvG3atokuCTeg3ktqDM7aXcdH7j8V9Kn",
+      "amount": 1490000000,
+      "isSpent": false
+    },
+    {
+      "txId": "e8360470c720ebccebeca66f2c696875cbf30b8a9250d3248cd93bf74976f1c5",
+      "outputIndex": 0,
+      "address": "1AvWkuncWFvWA6UN43Z2JAEZouEeu5qYAL",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "7fe92434bcb038e9af320cdc7d2d2e2d75074a5b15d0f6524982e75c36434744",
+      "outputIndex": 0,
+      "address": "1fuxeY46k4h5uT4FRhew8vvGvP4iTv9qG",
+      "amount": 2500000000,
+      "isSpent": false
+    },
+    {
+      "txId": "c8b96c2eebd2ada051c6d7b03f55d7853a6a2dd55023cf4d90e9dca5ca6298f4",
+      "outputIndex": 0,
+      "address": "1NJZ8JkKCP2foXuMS2WyQqumdQeCQGqYM5",
+      "amount": 2500000000,
+      "isSpent": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "network": {
+    "port": 18333,
+    "maxPeers": 5,
+    "seedNodes": [],
+    "connectionTimeout": 5000
+  },
+  "mining": {
+    "enabled": false,
+    "difficulty": 1,
+    "blockReward": 5000000000,
+    "targetBlockTime": 10000
+  },
+  "storage": {
+    "dataDirectory": "./test-data/temp",
+    "walletDirectory": "./test-data/temp/wallets",
+    "blockchainFile": "./test-data/temp/blockchain.json"
+  },
+  "logging": {
+    "level": "error"
+  }
+}
